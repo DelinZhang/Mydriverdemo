@@ -42,6 +42,7 @@
 		7BFEE0791CFA890C00D817B9 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BFEE05E1CFA890C00D817B9 /* 8.png */; };
 		7BFEE07A1CFA890C00D817B9 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BFEE05F1CFA890C00D817B9 /* 9.png */; };
 		7BFEE07B1CFA890C00D817B9 /* 未标题-1(3).png in Resources */ = {isa = PBXBuildFile; fileRef = 7BFEE0601CFA890C00D817B9 /* 未标题-1(3).png */; };
+		7BFEE07E1CFB239D00D817B9 /* Selectview.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFEE07D1CFB239D00D817B9 /* Selectview.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		7BFEE05E1CFA890C00D817B9 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
 		7BFEE05F1CFA890C00D817B9 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		7BFEE0601CFA890C00D817B9 /* 未标题-1(3).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "未标题-1(3).png"; sourceTree = "<group>"; };
+		7BFEE07C1CFB239D00D817B9 /* Selectview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Selectview.h; sourceTree = "<group>"; };
+		7BFEE07D1CFB239D00D817B9 /* Selectview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selectview.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				7BFEDFDF1CFA866300D817B9 /* AppDelegate.m */,
 				7BFEDFE11CFA866300D817B9 /* ViewController.h */,
 				7BFEDFE21CFA866300D817B9 /* ViewController.m */,
+				7BFEE07C1CFB239D00D817B9 /* Selectview.h */,
+				7BFEE07D1CFB239D00D817B9 /* Selectview.m */,
 				7BFEDFE41CFA866300D817B9 /* Main.storyboard */,
 				7BFEDFE71CFA866300D817B9 /* Assets.xcassets */,
 				7BFEDFE91CFA866300D817B9 /* LaunchScreen.storyboard */,
@@ -391,6 +396,7 @@
 			files = (
 				7BFEDFE31CFA866300D817B9 /* ViewController.m in Sources */,
 				7BFEDFE01CFA866300D817B9 /* AppDelegate.m in Sources */,
+				7BFEE07E1CFB239D00D817B9 /* Selectview.m in Sources */,
 				7BFEDFDD1CFA866300D817B9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

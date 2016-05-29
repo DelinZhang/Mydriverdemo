@@ -31,7 +31,7 @@
         <!--考驾照-->
         <scene sceneID="yin-wa-swW">
             <objects>
-                <viewController id="vac-bn-kbd" sceneMemberID="viewController">
+                <viewController id="vac-bn-kbd" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0zR-cs-W85"/>
                         <viewControllerLayoutGuide type="bottom" id="28p-f2-r52"/>
@@ -43,7 +43,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="未标题-1(3).png" translatesAutoresizingMaskIntoConstraints="NO" id="PcB-h5-LG9">
                                 <rect key="frame" x="-4" y="0.0" width="332" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZD-hP-BHo">
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZD-hP-BHo">
                                 <rect key="frame" x="46" y="94" width="100" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -55,10 +55,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="IH2-R9-yhH" kind="push" id="1Xk-pp-Kie"/>
+                                    <action selector="click:" destination="vac-bn-kbd" eventType="touchUpInside" id="MZ7-yC-0yJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co5-Za-zbV">
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co5-Za-zbV">
                                 <rect key="frame" x="174" y="94" width="100" height="60"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -66,8 +66,11 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="click:" destination="vac-bn-kbd" eventType="touchUpInside" id="e7W-Fp-2IM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUI-ge-GNd">
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUI-ge-GNd">
                                 <rect key="frame" x="46" y="174" width="100" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -75,8 +78,11 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="click:" destination="vac-bn-kbd" eventType="touchUpInside" id="lAz-3h-hxI"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apk-db-cQl">
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apk-db-cQl">
                                 <rect key="frame" x="174" y="174" width="100" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -84,16 +90,22 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="click:" destination="vac-bn-kbd" eventType="touchUpInside" id="F6W-wd-OCU"/>
+                                </connections>
                             </button>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUG-5D-bzN">
                                 <rect key="frame" x="120" y="121" width="80" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxE-vh-HKb">
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxE-vh-HKb">
                                         <rect key="frame" x="5" y="5" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="PxE-vh-HKb" secondAttribute="height" multiplier="1:1" id="e5m-Sm-q2J"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="1.png"/>
+                                        <connections>
+                                            <action selector="click:" destination="vac-bn-kbd" eventType="touchUpInside" id="AmB-tn-Hau"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,21 +169,27 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1I-en-eN9">
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1I-en-eN9">
                                 <rect key="frame" x="66" y="330" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Blm-27-Byr"/>
                                     <constraint firstAttribute="width" constant="60" id="nmR-6g-MAU"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="5.png"/>
+                                <connections>
+                                    <action selector="click:" destination="vac-bn-kbd" eventType="touchUpInside" id="nNP-D7-OVs"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ln6-HA-wmK">
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ln6-HA-wmK">
                                 <rect key="frame" x="194" y="330" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8vu-tx-42U"/>
                                     <constraint firstAttribute="width" constant="60" id="oJC-4P-hTD"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="6.png"/>
+                                <connections>
+                                    <action selector="click:" destination="vac-bn-kbd" eventType="touchUpInside" id="RIu-sj-cM4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="报名须知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hZ-75-qxd">
                                 <rect key="frame" x="62" y="410" width="68" height="20.5"/>
@@ -253,39 +271,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="考驾照" id="AHK-nD-gzp"/>
+                    <connections>
+                        <outlet property="selectBtn" destination="PxE-vh-HKb" id="wlA-2D-BhB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBA-rK-v4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="201" y="201"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="1Nr-ac-B59">
-            <objects>
-                <tableViewController id="IH2-R9-yhH" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zfH-6r-z5G">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4Qc-sb-S1T">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Qc-sb-S1T" id="in0-xL-oXn">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="IH2-R9-yhH" id="leg-qq-97w"/>
-                            <outlet property="delegate" destination="IH2-R9-yhH" id="gHA-Xr-0FN"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="7iL-5E-iHp"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="608-Aq-2bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="548" y="201"/>
         </scene>
     </scenes>
     <resources>
